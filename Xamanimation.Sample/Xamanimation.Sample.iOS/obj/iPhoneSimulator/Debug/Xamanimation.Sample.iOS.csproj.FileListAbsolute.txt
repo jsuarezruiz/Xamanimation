@@ -47,3 +47,24 @@ C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation.S
 C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.Design.dll
 C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.iOS\obj\iPhoneSimulator\Debug\XamanimationSampleiOS.exe.mdb
 C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.iOS\bin\iPhoneSimulator\Debug\XamanimationSampleiOS.exe.mdb
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.iOS\bin\iPhoneSimulator\Debug\Images\Heart.png
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.iOS\bin\iPhoneSimulator\Debug\XamanimationSampleiOS.exe
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.iOS\bin\iPhoneSimulator\Debug\XamanimationSampleiOS.pdb
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.iOS\bin\iPhoneSimulator\Debug\Xamanimation.Sample.dll
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.Design.dll
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.dll
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.dll
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.dll
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.Design.dll
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.iOS\bin\iPhoneSimulator\Debug\Xamanimation.dll
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.iOS\bin\iPhoneSimulator\Debug\Xamanimation.Sample.pdb
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.xml
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.iOS\bin\iPhoneSimulator\Debug\Xamanimation.pdb
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.iOS\obj\iPhoneSimulator\Debug\optimized\
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.iOS\obj\iPhoneSimulator\Debug\Xamanimation.Sample.iOS.csprojResolveAssemblyReference.cache
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.iOS\obj\iPhoneSimulator\Debug\XamanimationSampleiOS.exe
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.iOS\obj\iPhoneSimulator\Debug\XamanimationSampleiOS.pdb
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.iOS\obj\iPhoneSimulator\Debug\XamanimationSampleiOS.exe.mdb
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.iOS\bin\iPhoneSimulator\Debug\XamanimationSampleiOS.exe.mdb

@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>19a305b5-672c-4651-a273-699e794b4389</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>548349686646D0468F78269514E676659AFBD79D8BDC60D10C49EA473D848395</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>19a305b5-672c-4651-a273-699e794b4389_1.0.0.0_x86__3b4dnjq9ntz50</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>19a305b5-672c-4651-a273-699e794b4389_3b4dnjq9ntz50!App</RegisteredUserModeAppID>
@@ -19,16 +19,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-30T12:57:37.768</Modified>
+      <Modified>2015-12-30T16:27:58.178</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\bin\x86\Debug\Xamanimation.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\bin\x86\Debug\Xamanimation.UWP.exe">
       <PackagePath>entrypoint\Xamanimation.UWP.exe</PackagePath>
-      <Modified>2015-12-30T12:57:37.098</Modified>
+      <Modified>2015-12-30T16:27:57.567</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\javie\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -458,55 +458,55 @@
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
       <Modified>2015-12-27T12:43:57.492</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation.Sample\Xamanimation.Sample\bin\Debug\Xamanimation.Sample.dll">
+    <AppxPackagedFile Include="C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample\bin\Debug\Xamanimation.Sample.dll">
       <PackagePath>Xamanimation.Sample.dll</PackagePath>
-      <Modified>2015-12-30T12:57:34.805</Modified>
+      <Modified>2015-12-30T16:27:54.684</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample\bin\Debug\Xamanimation.dll">
+      <PackagePath>Xamanimation.dll</PackagePath>
+      <Modified>2015-12-30T16:25:37.214</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2015-12-27T19:16:45.300</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-10-10T20:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T20:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T20:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T20:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T20:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T20:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T20:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\bin\x86\Debug\Xamanimation.UWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\bin\x86\Debug\Xamanimation.UWP.xr.xml">
       <PackagePath>Xamanimation.UWP.xr.xml</PackagePath>
       <Modified>2015-12-27T19:20:15.982</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation\bin\Debug\Xamanimation.dll">
-      <PackagePath>Xamanimation.dll</PackagePath>
-      <Modified>2015-12-30T12:57:32.981</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -520,13 +520,13 @@
       <PackagePath>Xamarin.Forms.Platform.UAP\Properties\Xamarin.Forms.Platform.UAP.rd.xml</PackagePath>
       <Modified>2015-12-27T12:43:57.342</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-12-29T17:27:03.975</Modified>
+      <Modified>2015-12-30T16:09:17.928</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\bin\x86\Debug\Core\Xamanimation.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\bin\x86\Debug\Core\Xamanimation.UWP.exe">
       <PackagePath>Xamanimation.UWP.exe</PackagePath>
-      <Modified>2015-12-30T12:57:37.763</Modified>
+      <Modified>2015-12-30T16:27:58.172</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

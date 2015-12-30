@@ -48,6 +48,7 @@
     <Compile Include="Animations\TranslateAnimation.cs" />
     <Compile Include="Animations\TurnstileAnimation.cs" />
     <Compile Include="Behaviors\BeginAnimationBehavior.cs" />
+    <Compile Include="Extensions\AnimationExtension.cs" />
     <Compile Include="Triggers\BeginAnimation.cs" />
     <Compile Include="Animations\EasingType.cs" />
     <Compile Include="Helpers\EasingHelper.cs" />

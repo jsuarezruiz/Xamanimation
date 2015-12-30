@@ -12,6 +12,11 @@
             Animations = new List<AnimationBase>();
         }
 
+        public StoryBoard(List<AnimationBase> animations)
+        {
+            Animations = animations;
+        }
+
         public List<AnimationBase> Animations
         {
             get;

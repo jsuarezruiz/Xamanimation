@@ -50,6 +50,12 @@ namespace Xamanimation.Sample.Views {
         private global::Xamarin.Forms.BoxView StoryBoardBox;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.BoxView AnimationBox;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button AnimationExtensionButton;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(AnimationsView));
             BounceBox = this.FindByName<global::Xamarin.Forms.BoxView>("BounceBox");
@@ -63,6 +69,8 @@ namespace Xamanimation.Sample.Views {
             Heart = this.FindByName<global::Xamarin.Forms.Image>("Heart");
             JumpBox = this.FindByName<global::Xamarin.Forms.BoxView>("JumpBox");
             StoryBoardBox = this.FindByName<global::Xamarin.Forms.BoxView>("StoryBoardBox");
+            AnimationBox = this.FindByName<global::Xamarin.Forms.BoxView>("AnimationBox");
+            AnimationExtensionButton = this.FindByName<global::Xamarin.Forms.Button>("AnimationExtensionButton");
         }
     }
 }

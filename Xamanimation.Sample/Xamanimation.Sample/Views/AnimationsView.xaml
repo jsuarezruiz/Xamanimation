@@ -386,5 +386,27 @@
         </Button>
       </Grid>
     </ContentPage>
+    <ContentPage Title="AnimationExtension">
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition />
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <BoxView
+          Grid.Row="0"
+          x:Name="AnimationBox"
+          HorizontalOptions="Center"
+          VerticalOptions="Center"
+          HeightRequest="120"
+          WidthRequest="120"
+          Color="Silver" />
+        <Button
+          x:Name="AnimationExtensionButton"
+          Grid.Row="1"
+          HorizontalOptions="Center"
+          VerticalOptions="End"
+          Text="Animate" />
+      </Grid>
+    </ContentPage>
   </TabbedPage.Children>
 </TabbedPage>

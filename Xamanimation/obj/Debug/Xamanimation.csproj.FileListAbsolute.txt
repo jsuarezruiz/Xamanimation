@@ -8,3 +8,14 @@ C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation\b
 C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation\obj\Debug\Xamanimation.dll
 C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation\obj\Debug\Xamanimation.pdb
 C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation\obj\Debug\Xamanimation.csprojResolveAssemblyReference.cache
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation\bin\Debug\Xamanimation.dll
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation\bin\Debug\Xamanimation.pdb
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation\obj\Debug\Xamanimation.dll
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation\obj\Debug\Xamanimation.pdb
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation\obj\Debug\Xamanimation.dll.mdb
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation\bin\Debug\Xamanimation.dll.mdb

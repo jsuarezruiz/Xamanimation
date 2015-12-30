@@ -87,3 +87,4 @@ c:\users\javie\documents\visual studio 2015\Projects\Xamanimation\Xamanimation.S
 c:\users\javie\documents\visual studio 2015\Projects\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.WinPhone\obj\Debug\Xamanimation.Sample.WinPhone.dll
 c:\users\javie\documents\visual studio 2015\Projects\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.WinPhone\obj\Debug\Xamanimation.Sample.WinPhone.pdb
 c:\users\javie\documents\visual studio 2015\Projects\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.WinPhone\obj\Debug\XapCacheFile.xml
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.WinPhone\obj\Debug\Xamanimation.Sample.WinPhone.csprojResolveAssemblyReference.cache

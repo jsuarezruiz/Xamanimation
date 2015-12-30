@@ -23,3 +23,4 @@ c:\users\javie\documents\visual studio 2015\Projects\Xamanimation\Xamanimation.S
 c:\users\javie\documents\visual studio 2015\Projects\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.Droid\obj\Debug\uploadflags.txt
 C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.Droid\obj\Debug\Xamanimation.Sample.Droid.dll.mdb
 C:\Users\javie\Documents\Visual Studio 2015\Projects\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.Droid\bin\Debug\Xamanimation.Sample.Droid.dll.mdb
+C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample.Droid\obj\Debug\Xamanimation.Sample.Droid.csprojResolveAssemblyReference.cache
