@@ -1,3 +1,0 @@
-C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.Sample\Xamanimation.Sample.csproj;neutral
-C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation.Sample\Xamanimation.UWP\Xamanimation.UWP.csproj;x86
-C:\Users\javie\Documents\GitHub\Xamanimation\Xamanimation\Xamanimation.csproj;neutral
