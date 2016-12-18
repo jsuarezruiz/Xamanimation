@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+   <metadata minClientVersion="2.8.1">
+       <id>Xamanimation</id>
+       <version>$version$</version>
+       <title>Animations library for Xamarin Forms</title>
+       <authors>Javier Suárez Ruiz</authors>
+       <owners>Javier Suárez Ruiz</owners>
+       <projectUrl>https://github.com/jsuarezruiz/Xamanimation</projectUrl>
+       <licenseUrl>https://github.com/jsuarezruiz/Xamanimation/blob/master/LICENSE</licenseUrl>
+       <iconUrl>https://github.com/jsuarezruiz/Xamanimation/blob/master/Media/Logo.64x64.png</iconUrl>
+       <requireLicenseAcceptance>false</requireLicenseAcceptance>
+       <description>
+         Animations library for Xamarin Forms
+         Built against: 2.3.2.127
+       </description>
+       <summary>Animations for Xamarin.Forms for iOS, Android & Windows</summary>
+       <tags>community, xamarin, pcl, android, xamarin.forms, ios, uwp, animations, transitions</tags>
+       <dependencies>
+         <dependency id="Xamarin.Forms" version="2.3.2.127" />
+       </dependencies>
+     <releaseNotes>
+     </releaseNotes>
+   </metadata>
+   <files>
+      <!--Core-->
+     <file src="Xamanimation/Xamanimation/bin/Release/Xamanimation.dll" target="lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamanimation.dll" />
+     <file src="Xamanimation/Xamanimation/bin/Release/Xamanimation.pdb" target="lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamanimation.pdb" />
+     <file src="Xamanimation/Xamanimation/bin/Release/Xamanimation.xml" target="lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamanimation.xml" />
+     <file src=".\src\**\*.cs" target="src" />
+   </files>
+</package>

@@ -2,7 +2,7 @@
 
 **Xamanimation** is a portable library designed for Xamarin.Forms that aims to facilitate the use of **animations** to developers. Very simple use from **C# and XAML** code.
 
-![](xamanimation.gif)
+![](Media/xamanimation.gif)
 
 We can define animations in XAML to a visual element when loading through a Behavior, use a trigger in XAML to execute the animation or  from C# code.
 
