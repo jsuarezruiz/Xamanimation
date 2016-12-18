@@ -89,3 +89,7 @@ If we want to animate a BoxView called AnimationBox:
 Access the element, use the Animate method with the desired animation:
 
     AnimationBox.Animate(new HeartAnimation());
+
+## Copyright and license
+
+Code released under the MIT license.
