@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamanimation.Sample.Droid", "Xamanimation.Sample\Xamanimation.Sample.Droid\Xamanimation.Sample.Droid.csproj", "{4666A033-BC82-4628-B92B-117FF9979668}"
 EndProject
@@ -373,6 +373,8 @@ Global
 		{313E2D74-1958-46DB-AA07-A5D132C05BC3}.Release|ARM.Deploy.0 = Release|ARM
 		{313E2D74-1958-46DB-AA07-A5D132C05BC3}.Release|iPhone.ActiveCfg = Release|x86
 		{313E2D74-1958-46DB-AA07-A5D132C05BC3}.Release|iPhoneSimulator.ActiveCfg = Release|x86
+		{313E2D74-1958-46DB-AA07-A5D132C05BC3}.Release|iPhoneSimulator.Build.0 = Release|x86
+		{313E2D74-1958-46DB-AA07-A5D132C05BC3}.Release|iPhoneSimulator.Deploy.0 = Release|x86
 		{313E2D74-1958-46DB-AA07-A5D132C05BC3}.Release|x64.ActiveCfg = Release|x64
 		{313E2D74-1958-46DB-AA07-A5D132C05BC3}.Release|x64.Build.0 = Release|x64
 		{313E2D74-1958-46DB-AA07-A5D132C05BC3}.Release|x64.Deploy.0 = Release|x64
