@@ -6,7 +6,6 @@
 
 We can define animations in XAML to a visual element when loading through a Behavior, use a trigger in XAML to execute the animation or  from C# code.
 
-
 Available animations:
 
 - Color
@@ -19,6 +18,13 @@ Available animations:
 - Shake
 - Translate
 - Turnstile
+
+## Installation
+
+To install Xamanimation, run the following command in the Package Manager Console.
+
+    PM> Install-Package Xamanimation
+
 
 ## Animation directly from XAML
 
