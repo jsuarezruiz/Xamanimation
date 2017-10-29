@@ -8,9 +8,8 @@
     public class RotateToAnimation : AnimationBase
     {
         public static readonly BindableProperty RotationProperty =
-            BindableProperty.Create<RotateToAnimation, double>(p => p.Rotation, 0,
-            propertyChanged: (bindable, oldValue, newValue) =>
-            ((RotateToAnimation)bindable).Rotation = newValue);
+            BindableProperty.Create(nameof(Rotation), typeof(double), typeof(RotateToAnimation), default(double),
+                BindingMode.TwoWay, null);
 
         public double Rotation
         {
@@ -32,9 +31,8 @@
     public class RelRotateToAnimation : AnimationBase
     {
         public static readonly BindableProperty RotationProperty =
-            BindableProperty.Create<RelRotateToAnimation, double>(p => p.Rotation, 0,
-            propertyChanged: (bindable, oldValue, newValue) =>
-            ((RelRotateToAnimation)bindable).Rotation = newValue);
+            BindableProperty.Create(nameof(Rotation), typeof(double), typeof(RelRotateToAnimation), default(double),
+                BindingMode.TwoWay, null);
 
         public double Rotation
         {
@@ -56,9 +54,8 @@
     public class RotateXToAnimation : AnimationBase
     {
         public static readonly BindableProperty RotationProperty =
-            BindableProperty.Create<RotateXToAnimation, double>(p => p.Rotation, 0,
-            propertyChanged: (bindable, oldValue, newValue) =>
-            ((RotateXToAnimation)bindable).Rotation = newValue);
+            BindableProperty.Create(nameof(Rotation), typeof(double), typeof(RotateXToAnimation), default(double),
+                BindingMode.TwoWay, null);
 
         public double Rotation
         {
@@ -80,9 +77,8 @@
     public class RotateYToAnimation : AnimationBase
     {
         public static readonly BindableProperty RotationProperty =
-            BindableProperty.Create<RotateYToAnimation, double>(p => p.Rotation, 0,
-            propertyChanged: (bindable, oldValue, newValue) =>
-            ((RotateYToAnimation)bindable).Rotation = newValue);
+            BindableProperty.Create(nameof(Rotation), typeof(double), typeof(RotateYToAnimation), default(double),
+                BindingMode.TwoWay, null);
 
         public double Rotation
         {

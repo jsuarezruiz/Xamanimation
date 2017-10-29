@@ -8,9 +8,8 @@
     public class TranslateToAnimation : AnimationBase
     {
         public static readonly BindableProperty TranslateXProperty =
-           BindableProperty.Create<TranslateToAnimation, double>(p => p.TranslateX, 0,
-           propertyChanged: (bindable, oldValue, newValue) =>
-           ((TranslateToAnimation)bindable).TranslateX = newValue);
+            BindableProperty.Create(nameof(TranslateX), typeof(double), typeof(TranslateToAnimation), default(double),
+                BindingMode.TwoWay, null);
 
         public double TranslateX
         {
@@ -19,9 +18,8 @@
         }
 
         public static readonly BindableProperty TranslateYProperty =
-           BindableProperty.Create<TranslateToAnimation, double>(p => p.TranslateY, 0,
-           propertyChanged: (bindable, oldValue, newValue) =>
-           ((TranslateToAnimation)bindable).TranslateY = newValue);
+            BindableProperty.Create(nameof(TranslateY), typeof(double), typeof(TranslateToAnimation), default(double),
+                BindingMode.TwoWay, null);
 
         public double TranslateY
         {

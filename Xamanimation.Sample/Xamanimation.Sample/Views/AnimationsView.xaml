@@ -2,7 +2,7 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Xamanimation.Sample.Views.AnimationsView"
-             xmlns:xamanimation="clr-namespace:Xamanimation;assembly=Xamanimation"   
+             xmlns:xamanimation="clr-namespace:Xamanimation;assembly=Xamanimation"
              xmlns:extension="clr-namespace:Xamanimation.Sample.Extensions;assembly=Xamanimation.Sample">
   <TabbedPage.Resources>
     <ResourceDictionary>
@@ -62,17 +62,25 @@
       <xamanimation:HeartAnimation
         x:Key="HeartAnimation"
         Target="{x:Reference Heart}"/>
-       
+
       <xamanimation:JumpAnimation
         x:Key="JumpAnimation"
         Target="{x:Reference JumpBox}"
         Duration="1500"/>
-              
+
+      <Color x:Key="ToColor">Red</Color>
+      
+      <xamanimation:ColorAnimation
+        x:Key="ColorAnimation"
+        Target="{x:Reference ColorBox}"
+        ToColor="{StaticResource ToColor}"
+        Duration="1500"/>
+      
       <xamanimation:StoryBoard
         x:Key="StoryBoard"
         Target="{x:Reference StoryBoardBox}">
-          <xamanimation:ScaleToAnimation  Scale="2"/>
-          <xamanimation:ShakeAnimation />
+        <xamanimation:ScaleToAnimation  Scale="2"/>
+        <xamanimation:ShakeAnimation />
       </xamanimation:StoryBoard>
 
     </ResourceDictionary>
@@ -310,7 +318,7 @@
         </Grid.RowDefinitions>
         <Image
           Grid.Row="0"
-          x:Name="Heart" 
+          x:Name="Heart"
           Source="{extension:ImageResource Xamanimation.Sample.Images.Heart.png}"
           HorizontalOptions="Center"
           VerticalOptions="Center"
@@ -329,21 +337,21 @@
           </Button.Triggers>
         </Button>
       </Grid>
-    </ContentPage>    
-      <ContentPage Title="Jump">
+    </ContentPage>
+    <ContentPage Title="Jump">
       <Grid>
         <Grid.RowDefinitions>
           <RowDefinition />
           <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-       <BoxView
-          Grid.Row="0"
-          x:Name="JumpBox"
-          HorizontalOptions="Center"
-          VerticalOptions="Center"
-          HeightRequest="120"
-          WidthRequest="120"
-          Color="Aqua" />
+        <BoxView
+           Grid.Row="0"
+           x:Name="JumpBox"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HeightRequest="120"
+           WidthRequest="120"
+           Color="Aqua" />
         <Button
           Grid.Row="1"
           HorizontalOptions="Center"
@@ -353,6 +361,34 @@
             <EventTrigger Event="Clicked">
               <xamanimation:BeginAnimation
                 Animation="{StaticResource JumpAnimation}" />
+            </EventTrigger>
+          </Button.Triggers>
+        </Button>
+      </Grid>
+    </ContentPage>
+    <ContentPage Title="Color">
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition />
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid
+           Grid.Row="0"
+           x:Name="ColorBox"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HeightRequest="120"
+           WidthRequest="120"
+           BackgroundColor="Green" />
+        <Button
+          Grid.Row="1"
+          HorizontalOptions="Center"
+          VerticalOptions="End"
+          Text="Color">
+          <Button.Triggers>
+            <EventTrigger Event="Clicked">
+              <xamanimation:BeginAnimation
+                Animation="{StaticResource ColorAnimation}" />
             </EventTrigger>
           </Button.Triggers>
         </Button>

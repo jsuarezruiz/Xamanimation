@@ -8,9 +8,8 @@
     public class ScaleToAnimation : AnimationBase
     {
         public static readonly BindableProperty ScaleProperty =
-         BindableProperty.Create<ScaleToAnimation, double>(p => p.Scale, 0,
-         propertyChanged: (bindable, oldValue, newValue) =>
-         ((ScaleToAnimation)bindable).Scale = newValue);
+            BindableProperty.Create(nameof(Scale), typeof(double), typeof(ScaleToAnimation), default(double),
+                BindingMode.TwoWay, null);
 
         public double Scale
         {
@@ -32,9 +31,8 @@
     public class RelScaleToAnimation : AnimationBase
     {
         public static readonly BindableProperty ScaleProperty =
-         BindableProperty.Create<RelScaleToAnimation, double>(p => p.Scale, 0,
-         propertyChanged: (bindable, oldValue, newValue) =>
-         ((RelScaleToAnimation)bindable).Scale = newValue);
+            BindableProperty.Create(nameof(Scale), typeof(double), typeof(RelScaleToAnimation), default(double),
+                BindingMode.TwoWay, null);
 
         public double Scale
         {

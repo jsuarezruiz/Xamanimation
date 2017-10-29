@@ -8,9 +8,8 @@
     public class FadeToAnimation : AnimationBase
     {
         public static readonly BindableProperty OpacityProperty =
-         BindableProperty.Create<FadeToAnimation, double>(p => p.Opacity, 0,
-         propertyChanged: (bindable, oldValue, newValue) =>
-         ((FadeToAnimation)bindable).Opacity = newValue);
+            BindableProperty.Create(nameof(Opacity), typeof(double), typeof(FadeToAnimation), default(double),
+                BindingMode.TwoWay, null);
 
         public double Opacity
         {
@@ -38,9 +37,8 @@
         }
 
         public static readonly BindableProperty DirectionProperty =
-         BindableProperty.Create<FadeInAnimation, FadeDirection>(p => p.Direction, 0,
-         propertyChanged: (bindable, oldValue, newValue) =>
-         ((FadeInAnimation)bindable).Direction = newValue);
+            BindableProperty.Create(nameof(Direction), typeof(FadeDirection), typeof(FadeInAnimation), FadeDirection.Up,
+                BindingMode.TwoWay, null);
 
         public FadeDirection Direction
         {
@@ -88,9 +86,8 @@
         }
 
         public static readonly BindableProperty DirectionProperty =
-         BindableProperty.Create<FadeOutAnimation, FadeDirection>(p => p.Direction, 0,
-         propertyChanged: (bindable, oldValue, newValue) =>
-         ((FadeOutAnimation)bindable).Direction = newValue);
+            BindableProperty.Create(nameof(Direction), typeof(FadeDirection), typeof(FadeOutAnimation), FadeDirection.Up,
+                BindingMode.TwoWay, null);
 
         public FadeDirection Direction
         {

@@ -13,9 +13,8 @@
         }
 
         public static readonly BindableProperty DirectionProperty =
-            BindableProperty.Create<FlipAnimation, FlipDirection>(p => p.Direction, FlipDirection.Right,
-            propertyChanged: (bindable, oldValue, newValue) =>
-            ((FlipAnimation)bindable).Direction = newValue);
+          BindableProperty.Create(nameof(Direction), typeof(FlipDirection), typeof(FlipAnimation), FlipDirection.Right,
+              BindingMode.TwoWay, null);
 
         public FlipDirection Direction
         {

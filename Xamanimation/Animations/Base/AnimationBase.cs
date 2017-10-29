@@ -6,9 +6,8 @@
     public abstract class AnimationBase : BindableObject
     {
         public static readonly BindableProperty TargetProperty =
-        BindableProperty.Create<AnimationBase, VisualElement>(p => p.Target, null,
-        propertyChanged: (bindable, oldValue, newValue) =>
-        ((AnimationBase)bindable).Target = newValue);
+            BindableProperty.Create(nameof(Target), typeof(VisualElement), typeof(AnimationBase), null,
+                BindingMode.TwoWay, null);
 
         public VisualElement Target
         {
@@ -17,9 +16,8 @@
         }
 
         public static readonly BindableProperty DurationProperty =
-            BindableProperty.Create<AnimationBase, string>(p => p.Duration, "1000",
-                propertyChanged: (bindable, oldValue, newValue) =>
-                ((AnimationBase)bindable).Duration = newValue);
+            BindableProperty.Create(nameof(Duration), typeof(string), typeof(AnimationBase), "1000",
+                BindingMode.TwoWay, null);
 
         public string Duration
         {
@@ -28,9 +26,8 @@
         }
 
         public static readonly BindableProperty EasingProperty =
-            BindableProperty.Create<AnimationBase, EasingType>(p => p.Easing, EasingType.Linear,
-            propertyChanged: (bindable, oldValue, newValue) =>
-            ((AnimationBase)bindable).Easing = newValue);
+            BindableProperty.Create(nameof(Easing), typeof(EasingType), typeof(AnimationBase), EasingType.Linear,
+                BindingMode.TwoWay, null);
 
         public EasingType Easing
         {

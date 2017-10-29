@@ -30,10 +30,10 @@
             associatedObject = null;
             base.OnDetachingFrom(bindable);
         }
-
+      
         public static readonly BindableProperty AnimationProperty =
-          BindableProperty.Create<BeginAnimationBehavior, AnimationBase>(p => p.Animation, null,
-              BindingMode.OneWay, null);
+          BindableProperty.Create(nameof(Animation), typeof(AnimationBase), typeof(BeginAnimationBehavior), null,
+              BindingMode.TwoWay, null);
 
         public AnimationBase Animation
         {
