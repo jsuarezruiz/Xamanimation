@@ -9,6 +9,7 @@ We can define animations in XAML to a visual element when loading through a Beha
 
 Available animations:
 
+- Color
 - FadeTo
 - Flip
 - Heart
@@ -90,6 +91,11 @@ Access the element, use the Animate method with the desired animation:
 
     AnimationBox.Animate(new HeartAnimation());
 
+
+## Feedback
+
+Please use [GitHub issues](https://github.com/jsuarezruiz/xamanimation/issues) for questions or comments.
+
 ## Copyright and license
 
-Code released under the MIT license.
+Code released under the [MIT license](https://opensource.org/licenses/MIT).
