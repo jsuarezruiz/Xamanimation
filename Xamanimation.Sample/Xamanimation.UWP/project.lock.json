@@ -1884,7 +1884,7 @@
           }
         }
       },
-      "Xamarin.Forms/2.4.0.18342": {
+      "Xamarin.Forms/2.5.0.280555": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -1904,7 +1904,8 @@
         }
       },
       "Xamanimation/1.0.0": {
-        "type": "project"
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0"
       },
       "Xamanimation.Sample/1.0.0": {
         "type": "project",
@@ -3653,7 +3654,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.4.0.18342": {
+      "Xamarin.Forms/2.5.0.280555": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -3673,7 +3674,8 @@
         }
       },
       "Xamanimation/1.0.0": {
-        "type": "project"
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0"
       },
       "Xamanimation.Sample/1.0.0": {
         "type": "project",
@@ -5385,7 +5387,7 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.4.0.18342": {
+      "Xamarin.Forms/2.5.0.280555": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -5405,7 +5407,8 @@
         }
       },
       "Xamanimation/1.0.0": {
-        "type": "project"
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0"
       },
       "Xamanimation.Sample/1.0.0": {
         "type": "project",
@@ -7161,7 +7164,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.4.0.18342": {
+      "Xamarin.Forms/2.5.0.280555": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -7181,7 +7184,8 @@
         }
       },
       "Xamanimation/1.0.0": {
-        "type": "project"
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0"
       },
       "Xamanimation.Sample/1.0.0": {
         "type": "project",
@@ -8893,7 +8897,7 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.4.0.18342": {
+      "Xamarin.Forms/2.5.0.280555": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -8913,7 +8917,8 @@
         }
       },
       "Xamanimation/1.0.0": {
-        "type": "project"
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0"
       },
       "Xamanimation.Sample/1.0.0": {
         "type": "project",
@@ -10669,7 +10674,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.4.0.18342": {
+      "Xamarin.Forms/2.5.0.280555": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -10689,7 +10694,8 @@
         }
       },
       "Xamanimation/1.0.0": {
-        "type": "project"
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0"
       },
       "Xamanimation.Sample/1.0.0": {
         "type": "project",
@@ -12401,7 +12407,7 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.4.0.18342": {
+      "Xamarin.Forms/2.5.0.280555": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
@@ -12421,7 +12427,8 @@
         }
       },
       "Xamanimation/1.0.0": {
-        "type": "project"
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0"
       },
       "Xamanimation.Sample/1.0.0": {
         "type": "project",
@@ -15674,10 +15681,10 @@
         "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll"
       ]
     },
-    "Xamarin.Forms/2.4.0.18342": {
-      "sha512": "L06B17FaKwsMfMrbAPvMeQaPj6iJ61gcc4LWUBpCsmnxVmTnbwtBN5CMKBLUWseFWKd0KRQMu2EqObxK8oMzpQ==",
+    "Xamarin.Forms/2.5.0.280555": {
+      "sha512": "JVmozDJQNKEVhN4NG5EiG2IBua0+xK9b+t1L/VUN9HeIXkc8BubZM6UnnE1CftlGt0U2+JGTQSL79uxpx0KCpQ==",
       "type": "package",
-      "path": "xamarin.forms/2.4.0.18342",
+      "path": "xamarin.forms/2.5.0.280555",
       "files": [
         "build/netstandard1.0/Mono.Cecil.Mdb.dll",
         "build/netstandard1.0/Mono.Cecil.Pdb.dll",
@@ -15702,14 +15709,18 @@
         "lib/MonoAndroid10/Design/Xamarin.Forms.Core.Design.dll",
         "lib/MonoAndroid10/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/MonoAndroid10/FormsViewGroup.dll",
+        "lib/MonoAndroid10/FormsViewGroup.dll.mdb",
         "lib/MonoAndroid10/FormsViewGroup.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Core.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Core.dll.mdb",
         "lib/MonoAndroid10/Xamarin.Forms.Core.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Core.xml",
         "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll.mdb",
         "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Platform.dll",
         "lib/MonoAndroid10/Xamarin.Forms.Xaml.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Xaml.dll.mdb",
         "lib/MonoAndroid10/Xamarin.Forms.Xaml.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Xaml.xml",
         "lib/WP80/Design/Xamarin.Forms.Core.Design.dll",
@@ -15803,10 +15814,10 @@
         "lib/uap10.0/Xamarin.Forms.Platform.UAP.pri",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/AutoSuggestStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsEmbeddedPageWrapper.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControl.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControlStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/Resources.xbf",
@@ -15828,7 +15839,6 @@
         "lib/win81/Xamarin.Forms.Platform.WinRT.Tablet/Xamarin.Forms.Platform.WinRT.Tablet.xr.xml",
         "lib/win81/Xamarin.Forms.Platform.WinRT.dll",
         "lib/win81/Xamarin.Forms.Platform.WinRT.pri",
-        "lib/win81/Xamarin.Forms.Platform.WinRT/PageControl.xbf",
         "lib/win81/Xamarin.Forms.Platform.WinRT/StepperControl.xbf",
         "lib/win81/Xamarin.Forms.Platform.WinRT/Xamarin.Forms.Platform.WinRT.xr.xml",
         "lib/win81/Xamarin.Forms.Platform.dll",
@@ -15848,13 +15858,12 @@
         "lib/wpa81/Xamarin.Forms.Platform.WinRT.Phone/Xamarin.Forms.Platform.WinRT.Phone.xr.xml",
         "lib/wpa81/Xamarin.Forms.Platform.WinRT.dll",
         "lib/wpa81/Xamarin.Forms.Platform.WinRT.pri",
-        "lib/wpa81/Xamarin.Forms.Platform.WinRT/PageControl.xbf",
         "lib/wpa81/Xamarin.Forms.Platform.WinRT/StepperControl.xbf",
         "lib/wpa81/Xamarin.Forms.Platform.WinRT/Xamarin.Forms.Platform.WinRT.xr.xml",
         "lib/wpa81/Xamarin.Forms.Platform.dll",
         "lib/wpa81/Xamarin.Forms.Xaml.dll",
         "lib/wpa81/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.2.4.0.18342.nupkg.sha512",
+        "xamarin.forms.2.5.0.280555.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -15872,12 +15881,13 @@
   "projectFileDependencyGroups": {
     "": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.0.0",
-      "Xamarin.Forms >= 2.4.0.18342"
+      "Xamarin.Forms >= 2.5.0.280555"
     ],
     "UAP,Version=v10.0.10240": []
   },
   "packageFolders": {
-    "C:\\Users\\javie\\.nuget\\packages\\": {}
+    "C:\\Users\\javie\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
   },
   "project": {
     "restore": {
@@ -15888,19 +15898,26 @@
       "packagesPath": "C:\\Users\\javie\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\javie\\Documents\\GitHub\\Xamanimation\\Xamanimation.Sample\\Xamanimation.UWP\\obj\\",
       "projectStyle": "ProjectJson",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
+      ],
       "configFilePaths": [
         "C:\\Users\\javie\\Documents\\GitHub\\Xamanimation\\.nuget\\NuGet.Config",
         "C:\\Users\\javie\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "sources": {
+        "C:\\NuGet": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\javie\\Documents\\GitHub\\Xamanimation\\Release": {},
+        "C:\\Users\\javie\\Documents\\GitHub\\Xamanimation\\Xamanimation\\bin\\Release": {},
         "C:\\Users\\javie\\Documents\\GitHub\\xamarin-forms-samples\\NuGet": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://ci.appveyor.com/nuget/wpflighttoolkit-ci": {},
         "https://ci.appveyor.com/nuget/xamarin-forms-wpf-ci": {},
+        "https://nugets.blob.core.windows.net/live-reload/index.json": {},
         "https://www.myget.org/F/waveengine-nightly/api/v2/": {},
+        "https://www.myget.org/F/xamarinforms-ci/api/v2": {},
         "https://www.myget.org/F/xamarinforms-dev/api/v3/index.json": {}
       },
       "frameworks": {
@@ -15914,8 +15931,8 @@
       }
     },
     "dependencies": {
-      "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
-      "Xamarin.Forms": "2.4.0.18342"
+      "Microsoft.NETCore.UniversalWindowsPlatform": "[5.0.0, )",
+      "Xamarin.Forms": "[2.5.0.280555, )"
     },
     "frameworks": {
       "uap10.0.10240": {}
@@ -15940,5 +15957,70 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "El proyecto Xamanimation no es compatible con uap10.0.10240 (UAP,Version=v10.0.10240). El proyecto Xamanimation admite: netstandard2.0 (.NETStandard,Version=v2.0)",
+      "libraryId": "Xamanimation",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10240"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "El proyecto Xamanimation no es compatible con uap10.0.10240 (UAP,Version=v10.0.10240) / win10-arm. El proyecto Xamanimation admite: netstandard2.0 (.NETStandard,Version=v2.0)",
+      "libraryId": "Xamanimation",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10240/win10-arm"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "El proyecto Xamanimation no es compatible con uap10.0.10240 (UAP,Version=v10.0.10240) / win10-arm-aot. El proyecto Xamanimation admite: netstandard2.0 (.NETStandard,Version=v2.0)",
+      "libraryId": "Xamanimation",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10240/win10-arm-aot"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "El proyecto Xamanimation no es compatible con uap10.0.10240 (UAP,Version=v10.0.10240) / win10-x64. El proyecto Xamanimation admite: netstandard2.0 (.NETStandard,Version=v2.0)",
+      "libraryId": "Xamanimation",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10240/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "El proyecto Xamanimation no es compatible con uap10.0.10240 (UAP,Version=v10.0.10240) / win10-x64-aot. El proyecto Xamanimation admite: netstandard2.0 (.NETStandard,Version=v2.0)",
+      "libraryId": "Xamanimation",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10240/win10-x64-aot"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "El proyecto Xamanimation no es compatible con uap10.0.10240 (UAP,Version=v10.0.10240) / win10-x86. El proyecto Xamanimation admite: netstandard2.0 (.NETStandard,Version=v2.0)",
+      "libraryId": "Xamanimation",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10240/win10-x86"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "El proyecto Xamanimation no es compatible con uap10.0.10240 (UAP,Version=v10.0.10240) / win10-x86-aot. El proyecto Xamanimation admite: netstandard2.0 (.NETStandard,Version=v2.0)",
+      "libraryId": "Xamanimation",
+      "targetGraphs": [
+        "UAP,Version=v10.0.10240/win10-x86-aot"
+      ]
+    }
+  ]
 }
