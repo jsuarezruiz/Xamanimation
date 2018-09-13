@@ -9,9 +9,9 @@
         {
             InitializeComponent();
 
-            AnimationExtensionButton.Clicked += (sender, args) =>
+            AnimationExtensionButton.Clicked += async (sender, args) =>
             {
-                AnimationBox.Animate(new HeartAnimation());
+                await AnimationBox.Animate(new HeartAnimation());
             };
         }
     }

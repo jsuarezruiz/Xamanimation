@@ -12,12 +12,12 @@
        <requireLicenseAcceptance>false</requireLicenseAcceptance>
        <description>
          Animations library for Xamarin Forms
-         Built against: 3.1.0.583944
+         Built against: 3.1.0.697729
        </description>
-       <summary>Animations for Xamarin.Forms for iOS, Android and Windows</summary>
+       <summary>Animations for Xamarin.Forms for iOS, Android, Linux and Windows</summary>
        <tags>community, xamarin, pcl, android, xamarin.forms, ios, uwp, animations, transitions</tags>
        <dependencies>
-         <dependency id="Xamarin.Forms" version="3.1.0.583944" />
+         <dependency id="Xamarin.Forms" version="3.1.0.697729" />
        </dependencies>
      <releaseNotes>
      </releaseNotes>
