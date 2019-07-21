@@ -10,7 +10,7 @@
             <Style TargetType="Button">
                 <Setter Property="WidthRequest" Value="100" />
             </Style>
-            
+
             <xamanimation:BounceInAnimation
                 x:Key="BounceInAnimation"
                 Target="{x:Reference BounceBox}"
@@ -87,10 +87,26 @@
                 <xamanimation:ShakeAnimation />
             </xamanimation:StoryBoard>
 
+            <xamanimation:RotateToAnimation
+                x:Key="DelayedAnimation"
+                Target="{x:Reference DelayedAnimationBox}"
+                Duration="750"
+                Rotation="360"
+                Delay="2000"/>
+
+            <xamanimation:RelRotateToAnimation
+                x:Key="ForeverAnimation"
+                Target="{x:Reference ForeverAnimationBox}"
+                Easing="Linear"
+                Duration="1000"
+                Rotation="360"
+                RepeatForever="True"/>
+
         </ResourceDictionary>
     </TabbedPage.Resources>
     <TabbedPage.Children>
-        <ContentPage Title="Bounce">
+        <ContentPage
+            Title="Bounce">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition />
@@ -118,7 +134,8 @@
                 </Button>
             </Grid>
         </ContentPage>
-        <ContentPage Title="Fade">
+        <ContentPage 
+            Title="Fade">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition />
@@ -146,7 +163,8 @@
                 </Button>
             </Grid>
         </ContentPage>
-        <ContentPage Title="Flip">
+        <ContentPage
+            Title="Flip">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition />
@@ -174,7 +192,8 @@
                 </Button>
             </Grid>
         </ContentPage>
-        <ContentPage Title="Rotate">
+        <ContentPage
+            Title="Rotate">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition />
@@ -202,7 +221,8 @@
                 </Button>
             </Grid>
         </ContentPage>
-        <ContentPage Title="Scale">
+        <ContentPage
+            Title="Scale">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition />
@@ -230,7 +250,8 @@
                 </Button>
             </Grid>
         </ContentPage>
-        <ContentPage Title="Translate">
+        <ContentPage 
+            Title="Translate">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition />
@@ -258,7 +279,8 @@
                 </Button>
             </Grid>
         </ContentPage>
-        <ContentPage Title="Turnstile">
+        <ContentPage
+            Title="Turnstile">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition />
@@ -286,7 +308,8 @@
                 </Button>
             </Grid>
         </ContentPage>
-        <ContentPage Title="Shake">
+        <ContentPage 
+            Title="Shake">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition />
@@ -314,7 +337,8 @@
                 </Button>
             </Grid>
         </ContentPage>
-        <ContentPage Title="Breathing">
+        <ContentPage 
+            Title="Breathing">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition />
@@ -342,7 +366,8 @@
                 </Button>
             </Grid>
         </ContentPage>
-        <ContentPage Title="Jump">
+        <ContentPage 
+            Title="Jump">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition />
@@ -370,7 +395,8 @@
                 </Button>
             </Grid>
         </ContentPage>
-        <ContentPage Title="Color">
+        <ContentPage 
+            Title="Color">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition />
@@ -398,7 +424,8 @@
                 </Button>
             </Grid>
         </ContentPage>
-        <ContentPage Title="StoryBoard">
+        <ContentPage 
+            Title="StoryBoard">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition />
@@ -426,7 +453,8 @@
                 </Button>
             </Grid>
         </ContentPage>
-        <ContentPage Title="AnimationExtension">
+        <ContentPage 
+            Title="AnimationExtension">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition />
@@ -447,6 +475,103 @@
                     VerticalOptions="End"
                     Text="Animate" />
             </Grid>
+        </ContentPage>
+        <ContentPage 
+            Title="Delayed Animation">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <BoxView
+                    Grid.Row="0"
+                    x:Name="DelayedAnimationBox"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    HeightRequest="120"
+                    WidthRequest="120"
+                    Color="Orange" />
+                <Button
+                    x:Name="DelayedAnimationButton"
+                    Grid.Row="1"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    WidthRequest="150"
+                    Text="Animate after 2s">
+                    <Button.Triggers>
+                        <EventTrigger Event="Clicked">
+                            <xamanimation:BeginAnimation
+                                Animation="{StaticResource DelayedAnimation}" />
+                        </EventTrigger>
+                    </Button.Triggers>
+                </Button>
+            </Grid>
+        </ContentPage>
+        <ContentPage 
+            Title="Repeat Forever Animation">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <BoxView
+                    Grid.Row="0"
+                    x:Name="ForeverAnimationBox"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    HeightRequest="120"
+                    WidthRequest="120"
+                    Color="Green" />
+                <StackLayout
+                    Grid.Row="1"
+                    Orientation="Horizontal"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End">
+                    <Button
+                        Text="Start">
+                        <Button.Triggers>
+                            <EventTrigger Event="Clicked">
+                                <xamanimation:BeginAnimation
+                                    Animation="{StaticResource ForeverAnimation}" />
+                            </EventTrigger>
+                        </Button.Triggers>
+                    </Button>
+                    <Button
+                        Text="Stop">
+                        <Button.Triggers>
+                            <EventTrigger Event="Clicked">
+                                <xamanimation:EndAnimation
+                                    Animation="{StaticResource ForeverAnimation}" />
+                            </EventTrigger>
+                        </Button.Triggers>
+                    </Button>
+                </StackLayout>
+            </Grid>
+        </ContentPage>
+        <ContentPage 
+            Title="More Triggers">
+            <StackLayout>
+                <Label 
+                    Text="Animate Double and Color"/>
+                <Entry 
+                    FontSize="16"
+                    BackgroundColor="LightGray">
+                    <Entry.Triggers>
+                        <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                            <Trigger.EnterActions>
+                                <xamanimation:AnimateDouble TargetProperty="{x:Static Entry.FontSizeProperty}" To="24"/>
+                                <xamanimation:AnimateColor TargetProperty="{x:Static Entry.TextColorProperty}" To="Red"/>
+                                <xamanimation:AnimateColor TargetProperty="{x:Static VisualElement.BackgroundColorProperty}" To="Yellow"/>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <xamanimation:AnimateDouble TargetProperty="{x:Static Entry.FontSizeProperty}" To="16"/>
+                                <xamanimation:AnimateColor TargetProperty="{x:Static Entry.TextColorProperty}" To="Black"/>
+                                <xamanimation:AnimateColor TargetProperty="{x:Static VisualElement.BackgroundColorProperty}" To="LightGray"/>
+                            </Trigger.ExitActions>
+                        </Trigger>
+                    </Entry.Triggers>
+                </Entry>
+            </StackLayout>
         </ContentPage>
     </TabbedPage.Children>
 </TabbedPage>

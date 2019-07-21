@@ -9,7 +9,7 @@ namespace Xamanimation.Extensions
     {
         public static Task<bool> ColorTo(this VisualElement self, Color fromColor, Color toColor, Action<Color> callback, uint length = 250, Easing easing = null)
         {
-            Func<double, Color> transform = (t) =>
+            Color transform(double t) =>
                 Color.FromRgba(fromColor.R + t * (toColor.R - fromColor.R),
                                fromColor.G + t * (toColor.G - fromColor.G),
                                fromColor.B + t * (toColor.B - fromColor.B),
