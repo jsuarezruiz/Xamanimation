@@ -1,11 +1,11 @@
-﻿namespace Xamanimation
+﻿namespace Xamanimation.Triggers
 {
     using System;
     using System.Threading.Tasks;
     using Xamanimation.Helpers;
     using Xamarin.Forms;
 
-    public class AnimateColor : AnimationBaseTrigger<Color>
+    public class AnimateThickness : AnimationBaseTrigger<Thickness>
     {
         protected override async void Invoke(VisualElement sender)
         {
@@ -17,11 +17,11 @@
             if (Delay > 0)
                 await Task.Delay(Delay);
 
-            SetDefaultFrom((Color)sender.GetValue(TargetProperty));
+            SetDefaultFrom((double)sender.GetValue(TargetProperty));
 
-            sender.Animate($"AnimateColor{TargetProperty.PropertyName}", new Animation((progress) =>
+            sender.Animate($"AnimateThickness{TargetProperty.PropertyName}", new Animation((progress) =>
             {
-                sender.SetValue(TargetProperty, AnimationHelper.GetColorValue(From, To, progress));
+                sender.SetValue(TargetProperty, AnimationHelper.GetThicknessValue(From, To, progress));
             }),
             length: Duration,
             easing: EasingHelper.GetEasing(Easing));

@@ -1,11 +1,11 @@
-﻿namespace Xamanimation
+﻿namespace Xamanimation.Triggers
 {
     using System;
     using System.Threading.Tasks;
     using Xamanimation.Helpers;
     using Xamarin.Forms;
 
-    public class AnimateColor : AnimationBaseTrigger<Color>
+    public class AnimateCornerRadius : AnimationBaseTrigger<CornerRadius>
     {
         protected override async void Invoke(VisualElement sender)
         {
@@ -17,11 +17,11 @@
             if (Delay > 0)
                 await Task.Delay(Delay);
 
-            SetDefaultFrom((Color)sender.GetValue(TargetProperty));
+            SetDefaultFrom((CornerRadius)sender.GetValue(TargetProperty));
 
-            sender.Animate($"AnimateColor{TargetProperty.PropertyName}", new Animation((progress) =>
+            sender.Animate($"AnimateCornerRadius{TargetProperty.PropertyName}", new Animation((progress) =>
             {
-                sender.SetValue(TargetProperty, AnimationHelper.GetColorValue(From, To, progress));
+                sender.SetValue(TargetProperty, AnimationHelper.GetCornerRadiusValue(From, To, progress));
             }),
             length: Duration,
             easing: EasingHelper.GetEasing(Easing));

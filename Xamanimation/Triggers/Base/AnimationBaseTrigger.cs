@@ -8,6 +8,7 @@
         public T From { get; set; } = default(T);
         public T To { get; set; } = default(T);
         public uint Duration { get; set; } = 1000;
+        public int Delay { get; set; } = 0;
         public EasingType Easing { get; set; } = EasingType.Linear;
         public BindableProperty TargetProperty { get; set; } = default(BindableProperty);
 

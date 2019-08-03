@@ -214,6 +214,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\drawable\monkeys.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Xamanimation.Sample\Xamanimation.Sample.csproj">

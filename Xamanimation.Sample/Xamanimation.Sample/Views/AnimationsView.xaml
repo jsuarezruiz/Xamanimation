@@ -72,7 +72,7 @@
                 Target="{x:Reference JumpBox}"
                 Duration="1500"/>
 
-            <Color x:Key="ToColor">Red</Color>
+            <Color x:Key="ToColor">#FF0000</Color>
 
             <xamanimation:ColorAnimation
                 x:Key="ColorAnimation"
@@ -554,24 +554,147 @@
                 <Label 
                     Text="Animate Double and Color"/>
                 <Entry 
-                    FontSize="16"
+                    FontSize="16" 
                     BackgroundColor="LightGray">
                     <Entry.Triggers>
                         <Trigger TargetType="Entry" Property="IsFocused" Value="True">
                             <Trigger.EnterActions>
-                                <xamanimation:AnimateDouble TargetProperty="{x:Static Entry.FontSizeProperty}" To="24"/>
-                                <xamanimation:AnimateColor TargetProperty="{x:Static Entry.TextColorProperty}" To="Red"/>
-                                <xamanimation:AnimateColor TargetProperty="{x:Static VisualElement.BackgroundColorProperty}" To="Yellow"/>
+                                <xamanimation:AnimateDouble TargetProperty="Entry.FontSize" To="24"/>
+                                <xamanimation:AnimateColor TargetProperty="Entry.TextColor" To="Red"/>
+                                <xamanimation:AnimateColor TargetProperty="VisualElement.BackgroundColor" To="Yellow" Delay="1000"/>
+                                <xamanimation:AnimateDouble TargetProperty="VisualElement.Rotation" To="12" Duration="100"/>
                             </Trigger.EnterActions>
                             <Trigger.ExitActions>
                                 <xamanimation:AnimateDouble TargetProperty="{x:Static Entry.FontSizeProperty}" To="16"/>
                                 <xamanimation:AnimateColor TargetProperty="{x:Static Entry.TextColorProperty}" To="Black"/>
                                 <xamanimation:AnimateColor TargetProperty="{x:Static VisualElement.BackgroundColorProperty}" To="LightGray"/>
+                                <xamanimation:AnimateDouble TargetProperty="{x:Static VisualElement.RotationProperty}" To="0"/>
                             </Trigger.ExitActions>
                         </Trigger>
                     </Entry.Triggers>
                 </Entry>
             </StackLayout>
+        </ContentPage>
+        <ContentPage 
+            Title="Progress Animations">
+            <ScrollView>
+                <VisualElement.Behaviors>
+                    <xamanimation:ScrollViewScrollBehavior x:Name="ScrollBehavior" />
+                </VisualElement.Behaviors>
+                <Grid RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200" />
+                        <RowDefinition Height="24" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <!-- HEADER IMAGE -->
+                    <Image
+                        Grid.Row="0"
+                        Grid.RowSpan="2"
+                        x:Name="HeaderImage"
+                        Source="monkeys.jpg"
+                        Aspect="AspectFill"
+                        HorizontalOptions="FillAndExpand">
+                        <VisualElement.Behaviors>
+                            <xamanimation:AnimateProgressDouble
+                                TargetProperty="VisualElement.TranslationY"
+                                Progress="{Binding ScrollY, Source={x:Reference ScrollBehavior}}" 
+                                Minimum="0"
+                                Maximum="200"
+                                From="0"
+                                To="100"/>
+                        </VisualElement.Behaviors>
+                    </Image>
+                    <BoxView 
+                        Grid.Row="1"
+                        BackgroundColor="Red"
+                        CornerRadius="24, 24, 0, 0">
+                        <VisualElement.Behaviors>
+                            <xamanimation:AnimateProgressColor
+                                TargetProperty="VisualElement.BackgroundColor"
+                                Progress="{Binding ScrollY, Source={x:Reference ScrollBehavior}}" 
+                                Minimum="0"
+                                Maximum="200"
+                                From="Black"
+                                To="Red"/>
+                            <xamanimation:AnimateProgressCornerRadius
+                                TargetProperty="BoxView.CornerRadius"
+                                Progress="{Binding ScrollY, Source={x:Reference ScrollBehavior}}" 
+                                Minimum="0"
+                                Maximum="200"
+                                From="24, 24, 0, 0"
+                                To="0,0,0,0"/>
+                        </VisualElement.Behaviors>
+                    </BoxView>
+                    <Grid 
+                        Grid.Row="2"
+                        BackgroundColor="Black" 
+                        HeightRequest="500"
+                        Padding="12">
+                        <VisualElement.Behaviors>
+                            <xamanimation:AnimateProgressColor
+                                TargetProperty="VisualElement.BackgroundColor"
+                                Progress="{Binding ScrollY, Source={x:Reference ScrollBehavior}}" 
+                                Minimum="0"
+                                Maximum="200"
+                                From="Black"
+                                To="Red"/>
+                        </VisualElement.Behaviors>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="80"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Label 
+                            Grid.Column="0"
+                            Grid.Row="0"
+                            Text="ScrollY:"
+                            TextColor="White"
+                            VerticalOptions="Center"/>
+                        <Label 
+                            Grid.Column="1"
+                            Grid.Row="0"
+                            Text="{Binding Source={x:Reference ScrollBehavior}, Path=ScrollY}"
+                            TextColor="White"
+                            VerticalOptions="Center">
+                            <VisualElement.Behaviors>
+                                <xamanimation:AnimateProgressDouble
+                                    TargetProperty="Label.FontSize"
+                                    Progress="{Binding ScrollY, Source={x:Reference ScrollBehavior}}" 
+                                    Minimum="0"
+                                    Maximum="200"
+                                    From="12"
+                                    To="24"/>
+                            </VisualElement.Behaviors>
+                        </Label>
+                        <Label 
+                            Grid.Column="0"
+                            Grid.Row="1"
+                            Text="Header TranslationY:"
+                            TextColor="White"
+                            VerticalOptions="Center"/>
+                        <Label 
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            Text="{Binding Source={x:Reference HeaderImage}, Path=TranslationY}"
+                            TextColor="White"
+                            VerticalOptions="Center">
+                            <VisualElement.Behaviors>
+                                <xamanimation:AnimateProgressDouble
+                                    TargetProperty="Label.FontSize"
+                                    Progress="{Binding ScrollY, Source={x:Reference ScrollBehavior}}" 
+                                    Minimum="0"
+                                    Maximum="200"
+                                    From="12"
+                                    To="24"/>
+                            </VisualElement.Behaviors>
+                        </Label>
+                    </Grid>
+                </Grid>
+            </ScrollView>
         </ContentPage>
     </TabbedPage.Children>
 </TabbedPage>
