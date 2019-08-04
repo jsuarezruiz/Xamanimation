@@ -1,10 +1,10 @@
-﻿using System;
-using System.Threading.Tasks;
-using Xamarin.Forms;
-
-// https://developer.xamarin.com/samples/xamarin-forms/userinterface/animation/custom/
-namespace Xamanimation.Extensions
+﻿// https://developer.xamarin.com/samples/xamarin-forms/userinterface/animation/custom/
+namespace Xamanimation
 {
+    using System;
+    using System.Threading.Tasks;
+    using Xamarin.Forms;
+
     public static class ColorExtensions
     {
         public static Task<bool> ColorTo(this VisualElement self, Color fromColor, Color toColor, Action<Color> callback, uint length = 250, Easing easing = null)

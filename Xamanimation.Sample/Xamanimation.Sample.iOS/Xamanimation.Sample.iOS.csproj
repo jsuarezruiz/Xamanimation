@@ -122,6 +122,9 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="MaterialComponents, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.iOS.MaterialComponents.72.2.0.1\lib\Xamarin.iOS\MaterialComponents.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -131,6 +134,9 @@
     <Reference Include="Xamarin.Forms.Core.Design, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.0.0.6490\lib\Xamarin.iOS10\Design\Xamarin.Forms.Core.Design.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Material, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.Visual.Material.4.1.0.618606\lib\Xamarin.iOS10\Xamarin.Forms.Material.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Forms.Platform, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.4.1.0.581479\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
@@ -149,6 +155,9 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\monkeys.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\heart.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

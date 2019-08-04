@@ -8,7 +8,7 @@
     {
         public App()
         {
-            MainPage = new NavigationPage(new AnimationsView());
+            MainPage = new AnimationsShell();
         }
 
         protected override void OnStart()

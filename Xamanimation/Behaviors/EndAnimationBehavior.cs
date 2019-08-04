@@ -1,7 +1,7 @@
-﻿using Xamarin.Forms;
-
-namespace Xamanimation.Behaviors
+﻿namespace Xamanimation
 {
+    using Xamarin.Forms;
+
     public class EndAnimationBehavior : Behavior<VisualElement>
     {
         private static VisualElement associatedObject;
