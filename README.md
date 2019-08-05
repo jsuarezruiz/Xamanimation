@@ -162,6 +162,13 @@ A common scenario is using a scroll. A parallax effect, etc.
 ```
 <img src="Media/xamanimation-progress.gif" Width="250" />
 
+Available options:
+* AnimateProgressInt
+* AnimateProgressColor
+* AnimateProgressCornerRadius
+* AnimateProgressDouble
+* AnimateProgressThickness
+
 ## Transitions
 
 Provides the animated transition behavior on controls when they first appear. You can use this on individual objects or on containers of objects. In the latter case, child elements will animate into view in sequence rather than all at the same time.
