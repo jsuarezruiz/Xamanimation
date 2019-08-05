@@ -2,7 +2,7 @@
 
 **Xamanimation** is a portable library designed for Xamarin.Forms that aims to facilitate the use of **animations** to developers. Very simple use from **C# and XAML** code.
 
-![](Media/xamanimation.gif)
+![Xamanimation](Media/xamanimation.gif)
 
 We can define animations in XAML to a visual element when loading through a Behavior, use a trigger in XAML to execute the animation or  from C# code.
 
@@ -26,7 +26,7 @@ To install Xamanimation, run the following command in the Package Manager Consol
     PM> Install-Package Xamanimation
 
 
-## Animation directly from XAML
+## Animations directly from XAML
 
 One of the main advantages of the library is the possibility of using animations from **XAML**. We must use the following namespace:
 
@@ -35,18 +35,18 @@ One of the main advantages of the library is the possibility of using animations
 Let's animate a BoxView:
 
     <BoxView
-     x:Name="FadeBox"
-     HeightRequest="120"
-     WidthRequest="120"
-     Color="Blue" />
+         x:Name="FadeBox"
+         HeightRequest="120"
+         WidthRequest="120"
+         Color="Blue" />
 
 we can define animations directly in XAML (as Application or Page Resources):
 
     <xamanimation:FadeToAnimation
-     x:Key="FadeToAnimation"
-     Target="{x:Reference FadeBox}"
-     Duration="2000"
-     Opacity="0"/>
+         x:Key="FadeToAnimation"
+         Target="{x:Reference FadeBox}"
+         Duration="2000"
+         Opacity="0"/>
 
 Using the namespace of xamanimation, we have access to the whole set of animations of the library. In all of them there are a number of common **parameters** such as:
 
@@ -63,22 +63,22 @@ To launch the animation we have two options:
 Using the Clicked event of a button we can launch the previous animation using the trigger provided:
 
     <Button 
-     Text="Fade">
-     <Button.Triggers>
-      <EventTrigger Event="Clicked">
-       <xamanimation:BeginAnimation
-    Animation="{StaticResource FadeToAnimation}" />
-      </EventTrigger>
-     </Button.Triggers>
+         Text="Fade">
+         <Button.Triggers>
+              <EventTrigger Event="Clicked">
+                   <xamanimation:BeginAnimation
+                        Animation="{StaticResource FadeToAnimation}" />
+              </EventTrigger>
+         </Button.Triggers>
     </Button>
 
 We also have the concept of **Storyboard** as a set of animations that we can execute over time:
 
     <xamanimation:StoryBoard
-     x:Key="StoryBoard"
-     Target="{x:Reference StoryBoardBox}">
-       <xamanimation:ScaleToAnimation  Scale="2"/>
-       <xamanimation:ShakeAnimation />
+         x:Key="StoryBoard"
+         Target="{x:Reference StoryBoardBox}">
+         <xamanimation:ScaleToAnimation  Scale="2"/>
+         <xamanimation:ShakeAnimation />
     </xamanimation:StoryBoard>
 
 ## Using C# 
@@ -88,15 +88,83 @@ In the same way that we can use the animations of the library from XAML, we can 
 If we want to animate a BoxView called AnimationBox:
 
     <BoxView
-     x:Name="AnimationBox"
-     HeightRequest="120"
-     WidthRequest="120"
-     Color="Blue" />
+         x:Name="AnimationBox"
+         HeightRequest="120"
+         WidthRequest="120"
+         Color="Blue" />
 
 Access the element, use the Animate method with the desired animation:
 
     AnimationBox.Animate(new HeartAnimation());
 
+## Triggers!
+
+```
+<Entry 
+    FontSize="16" 
+    BackgroundColor="LightGray">
+    <Entry.Triggers>
+        <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+            <Trigger.EnterActions>
+                <xamanimation:AnimateDouble TargetProperty="Entry.FontSize" To="24"/>
+                <xamanimation:AnimateColor TargetProperty="Entry.TextColor" To="Red"/>
+                <xamanimation:AnimateColor TargetProperty="VisualElement.BackgroundColor" To="Yellow" Delay="1000"/>
+                <xamanimation:AnimateDouble TargetProperty="VisualElement.Rotation" To="12" Duration="100"/>
+            </Trigger.EnterActions>
+            <Trigger.ExitActions>
+                <xamanimation:AnimateDouble TargetProperty="{x:Static Entry.FontSizeProperty}" To="16"/>
+                <xamanimation:AnimateColor TargetProperty="{x:Static Entry.TextColorProperty}" To="Black"/>
+                <xamanimation:AnimateColor TargetProperty="{x:Static VisualElement.BackgroundColorProperty}" To="LightGray"/>
+                <xamanimation:AnimateDouble TargetProperty="{x:Static VisualElement.RotationProperty}" To="0"/>
+            </Trigger.ExitActions>
+        </Trigger>
+    </Entry.Triggers>
+</Entry>
+```
+<img src="Media/xamanimation-triggers.gif" Width="250" />
+
+## Progress Animations
+
+```
+<BoxView 
+    BackgroundColor="Red"
+    CornerRadius="24, 24, 0, 0">
+    <VisualElement.Behaviors>
+        <xamanimation:AnimateProgressColor
+            TargetProperty="VisualElement.BackgroundColor"
+            Progress="{Binding ScrollY, Source={x:Reference ScrollBehavior}}" 
+            Minimum="0"
+            Maximum="200"
+            From="Black"
+            To="Red"/>
+        <xamanimation:AnimateProgressCornerRadius
+            TargetProperty="BoxView.CornerRadius"
+            Progress="{Binding ScrollY, Source={x:Reference ScrollBehavior}}" 
+            Minimum="0"
+            Maximum="200"
+            From="24, 24, 0, 0"
+            To="0,0,0,0"/>
+    </VisualElement.Behaviors>
+</BoxView>
+```
+<img src="Media/xamanimation-progress.gif" Width="250" />
+
+## Transitions
+
+```
+<FlexLayout 
+     Wrap="Wrap"
+	 Direction="Row"
+	 JustifyContent="Start"
+	 AlignItems="Start"
+	 AlignContent="Start">
+	 <FlexLayout.Behaviors>
+	 <xamanimation:EntranceTransition
+	      Duration="1000"/>
+	 </FlexLayout.Behaviors>
+</FlexLayout>
+```
+<img src="Media/xamanimation-transitions.gif" Width="250" />
 
 ## Feedback
 
