@@ -2,7 +2,6 @@
 {
     using System;
     using System.Threading.Tasks;
-    using Xamanimation.Extensions;
     using Xamarin.Forms;
 
     public class ColorAnimation : AnimationBase
