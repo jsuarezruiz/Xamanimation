@@ -99,6 +99,8 @@ Access the element, use the Animate method with the desired animation:
 
 ## Triggers!
 
+Triggers allow you to start animations declaratively in XAML based on events or property changes.
+
 ```
 <Entry 
     FontSize="16" 
@@ -123,7 +125,18 @@ Access the element, use the Animate method with the desired animation:
 ```
 <img src="Media/xamanimation-triggers.gif" Width="250" />
 
+You can animate any property of type Int, Double, Color, Thickness or CornerRadius. Available options:
+* AnimateInt
+* AnimateColor
+* AnimateCornerRadius
+* AnimateDouble
+* AnimateThickness
+
 ## Progress Animations
+
+Sometimes you need to animate something based on a value that changes over time, for example as a a the result of a user interaction.
+
+A common scenario is using a scroll. A parallax effect, etc.
 
 ```
 <BoxView 
@@ -150,6 +163,8 @@ Access the element, use the Animate method with the desired animation:
 <img src="Media/xamanimation-progress.gif" Width="250" />
 
 ## Transitions
+
+Provides the animated transition behavior on controls when they first appear. You can use this on individual objects or on containers of objects. In the latter case, child elements will animate into view in sequence rather than all at the same time.
 
 ```
 <FlexLayout 
