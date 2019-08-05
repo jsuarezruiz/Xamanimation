@@ -97,6 +97,18 @@ Access the element, use the Animate method with the desired animation:
 
     AnimationBox.Animate(new HeartAnimation());
 
+## Take control of the animation
+
+You can control the duration of the animation using the **Duration** property. In addition to the type of **Easing** to use. Now, new properties have also been added such as:
+
+**Delay** Add a delay before play the animation.
+
+<img src="Media/xamanimation-delayed.gif" Width="250" />
+
+**Repeat Forever** Now you can create infinite animations if you need it.
+
+<img src="Media/xamanimation-repeat.gif" Width="250" />
+
 ## Triggers!
 
 Triggers allow you to start animations declaratively in XAML based on events or property changes.
