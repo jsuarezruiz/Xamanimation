@@ -1,6 +1,6 @@
 # Xamanimation - Animation Library for Xamarin.Forms
 
-**Xamanimation** is a portable library designed for Xamarin.Forms that aims to facilitate the use of **animations** to developers. Very simple use from **C# and XAML** code.
+**Xamanimation** is a library designed for Xamarin.Forms that aims to facilitate the use of **animations** to developers. Very simple use from **C# and XAML** code.
 
 ![Xamanimation](Media/xamanimation.gif)
 
