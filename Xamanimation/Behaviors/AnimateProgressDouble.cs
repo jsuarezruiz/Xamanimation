@@ -36,11 +36,15 @@
 
         protected override void OnUpdate()
         {
-            if (Progress < Minimum)
+            if (Progress < Minimum) {
+                Target.SetValue(TargetProperty, From * MultiplyValue);
                 return;
+            }
 
-            if (Progress >= Maximum)
+            if (Progress >= Maximum) {
+                Target.SetValue(TargetProperty, To * MultiplyValue);
                 return;
+            }
 
             //Formula Used
             //Y = ((X - X1)*(Y2 - Y1) / (X2 - X1)) + Y1

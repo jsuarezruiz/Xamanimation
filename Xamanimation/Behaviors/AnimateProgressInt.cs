@@ -26,11 +26,15 @@
 
         protected override void OnUpdate()
         {
-            if (Progress < Minimum)
+            if (Progress < Minimum) {
+                Target.SetValue(TargetProperty, From);
                 return;
+            }
 
-            if (Progress >= Maximum)
+            if (Progress >= Maximum) {
+                Target.SetValue(TargetProperty, To);
                 return;
+            }
 
             int? value = (int)(((Progress - Minimum) * (To - From) / (Maximum - Minimum)) + From);
 
