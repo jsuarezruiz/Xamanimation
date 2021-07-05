@@ -43,7 +43,8 @@
             var newR = (To.R - From.R) * Progress;
             var newG = (To.G - From.G) * Progress;
             var newB = (To.B - From.B) * Progress;
-            Color value = Color.FromRgb((int)(From.R + newR), (int)(From.G + newG), (int)(From.B + newB));
+            var newA = (To.A - From.A) * Progress;
+            Color value = Color.FromRgba((int)(From.R + newR), (int)(From.G + newG), (int)(From.B + newB), (int)(From.A + newA));
 
             Target.SetValue(TargetProperty, value);
         }
